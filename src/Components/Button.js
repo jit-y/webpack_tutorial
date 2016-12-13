@@ -1,7 +1,5 @@
-import $ from 'jquery';
-import template from './Button.html';
-import Mustache from 'mustache';
-import './Button.sass';
+import $ from "jquery";
+import Mustache from "mustache";
 
 export default class Button {
   constructor(link) {
@@ -17,6 +15,6 @@ export default class Button {
       Mustache.render(template, {text})
     );
 
-    $('.button').click(this.onClick.bind(this));
+    $(".button").click(this.onClick.bind(this));
   }
 }
